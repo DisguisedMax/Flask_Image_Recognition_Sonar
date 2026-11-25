@@ -1,7 +1,8 @@
 """Flask web app that predicts hand-sign digits from uploaded images."""
+import os
+
 from flask import Flask, render_template, request
 from model import preprocess_img, predict_result
-import os
 
 # Instantiating flask app
 app = Flask(__name__)
